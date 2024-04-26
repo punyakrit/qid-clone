@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+.shadow-top-left {
+    box-shadow: -10px -5px 40px #121e13; /* You can adjust the values as needed */
+}
+
+.shadow-bottom-left {
+    box-shadow: -10px 10px 40px #1a1507; /* You can adjust the values as needed */
+}
+
 @tailwind utilities;
+
