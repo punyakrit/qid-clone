@@ -52,7 +52,7 @@ function Info() {
                 </div>
               </div>
 
-              <div className="bg-[#1a1507] h-min rounded-3xl border border-white/40 w-1/2 p-4 shadow-bottom-left">
+              <div className="bg-[#1a1507]/70 h-min rounded-3xl border border-white/40 w-1/2 p-4 shadow-bottom-left">
                 <div className="text-5xl font-bold text-white/40 pb-1">2</div>
                 <div className="text-white text-5xl py-4">Sharing</div>
                 <div className="text-white/50 pb-2">
