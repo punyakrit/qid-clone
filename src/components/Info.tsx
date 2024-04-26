@@ -4,7 +4,7 @@ import mb from "../assets/mobile.png";
 
 function Info() {
   return (
-    <div className=" ">
+    <div >
       <div className="h-full">
         <div className="bg-black/70  w-full h-max  2xl:px-[750px] xl:px-52 px-6  ">
           <div className="md:flex ">
@@ -65,19 +65,19 @@ function Info() {
 
           <div className="flex">
             <div className="w-2/12 flex flex-col ">
-              <div className=" border-b pb-5 w-14 flex -ml-4 justify-center">
-                <div className="h-28 w-2 bg-gradient-to-b from-transparent to-[#93fb6f] "></div>
+              <div className=" border-b pb-5 w-10 flex -ml-4 justify-center">
+                <div className="h-28 md:h-20 w-2 bg-gradient-to-b from-transparent to-[#93fb6f] "></div>
               </div>
-              <div className=" border-b mt-4 pb-5 w-14 flex -ml-4 justify-center">
-                <div className="h-48 w-2 bg-gradient-to-b  from-[#93fb6f] via-green-500 to-orange-500 "></div>
+              <div className=" border-b mt-4 pb-5 w-10 flex -ml-4 justify-center">
+                <div className="h-80 md:h-56 w-2 bg-gradient-to-b  from-[#93fb6f] via-green-500 to-orange-500 "></div>
               </div>
-              <div className="  mt-4 pb-5 w-14 flex -ml-4 justify-center">
-                <div className="h-32 w-2 bg-gradient-to-b  from-orange-500 to-transparent "></div>
+              <div className="  mt-4  pb-5 w-10 flex -ml-4 justify-center">
+                <div className="h-56 md:h-36 w-2 bg-gradient-to-b  from-orange-500 to-transparent "></div>
               </div>
             </div>
-            <div>
+            <div className="ml-4 lg:-ml-4">
               <div className="py-10">
-                <div className="text-5xl text-white w-[500px]">
+                <div className="md:text-5xl text-3xl text-white md:w-[500px]">
                   Your true identity,{" "}
                   <span className="bg-gradient-to-r from-green-200 to-green-500 bg-clip-text text-transparent">
                     managed
@@ -95,7 +95,7 @@ function Info() {
               </div>
 
               <div className="py-10">
-                <div className="text-5xl text-white w-[600px]">
+                <div className="md:text-5xl text-3xl text-white md:w-[600px]">
                   <span className="bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
                     Share
                   </span>{" "}
