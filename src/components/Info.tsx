@@ -4,7 +4,7 @@ import mb from "../assets/mobile.png";
 
 function Info() {
   return (
-    <div className="bg bg-repeat-y" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="bg bg-repeat" style={{ backgroundImage: `url(${bg})` }}>
       <div className="h-full">
         <div className="bg-black/70  w-full h-max  2xl:px-[750px] xl:px-52 px-6  ">
           <div className="md:flex ">
