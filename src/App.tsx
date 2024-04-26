@@ -1,4 +1,5 @@
 import Appbar from "./components/Appbar";
+import Business from "./components/Business";
 import Info from "./components/Info";
 import Home from "./page/Home";
 
@@ -9,6 +10,7 @@ function App() {
       <div className="">
         <Home />
         <Info/>
+        <Business/>
       </div>
     </div>
   );
