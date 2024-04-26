@@ -2,8 +2,24 @@ import bg from "../assets/bg2.png";
 import qr from "../assets/qr.png";
 import data from "../assets/data.png";
 import { FaChevronRight } from "react-icons/fa";
+import p1 from "../assets/pq.jpg";
+import p2 from "../assets/ps.jpg";
+import p3 from "../assets/px.jpg";
+import p4 from "../assets/pz.jpg";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+
+} from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 
 function Analytics() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true, loop: true })
+  );
   return (
     <div className="bg bg-repeat" style={{ backgroundImage: `url(${bg})` }}>
       <div className="h-full">
@@ -80,8 +96,63 @@ function Analytics() {
           </div>
 
           <div className="py-20">
-            <div className="text-7xl font-medium text-center">
-              Identified by <span className="italic font-bold">qid</span>
+            <div className="md:text-7xl text-5xl font-medium text-center">
+              <span className="bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent">
+                Identified
+              </span>{" "}
+              by <span className="italic font-bold">qid</span>
+            </div>
+            <div className="md:text-2xl text-xl py-4 text-center">
+              Let’s dive into the real stories of how our service has touched
+              the lives of our customers.
+            </div>
+
+            <div className=" mt-6 px-10  items-center">
+              <Carousel plugins={[plugin.current]}>
+                <CarouselContent>
+                  <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+                    <PersonCard
+                      img={p1}
+                      title={
+                        " Guests are benefited as they can pre-fill the required documents beforethey come-in."
+                      }
+                      name={"Krishan Pandey"}
+                      desc={"Property Owner, The Unmad, Dharamkot"}
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                    <PersonCard
+                      img={p2}
+                      title={
+                        "Best bheed management software for your property's front desk. ID collection has never been this fast."
+                      }
+                      name={"Dhruv Arora"}
+                      desc={"Property Owner, Unplan Hostels, Rishikesh"}
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                    <PersonCard
+                      img={p3}
+                      title={
+                        "Even while on the move, QID allows me to easily monitor and manage the business with precision."
+                      }
+                      name={"Jitesh Agarwal"}
+                      desc={"Founder, The Lost Hostels"}
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                    <PersonCard
+                      img={p4}
+                      title={
+                        " QID is set to revolutionise not just hospitality, but also other identity-centric industries."
+                      }
+                      name={"Mayur Sontakke"}
+                      desc={"Founder & CEO, NomadGao"}
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                
+              </Carousel>
             </div>
           </div>
         </div>
@@ -97,5 +168,17 @@ function Card({ children }: any) {
     </div>
   );
 }
+
+function PersonCard({ img, title, name, desc }: any) {
+  return (
+    <div className="p-4 border rounded-3xl h-96 border-gray-400/20 bg-black m-2 flex flex-col">
+      <img src={img} className="w-24 h-24 object-cover rounded-full mb-4"></img>
+      <div className="text-xl mb-2">{title}</div>
+      <div className="text-xl text-gray-500 font-bold mb-2">{name}</div>
+      <div className="text-gray-500">{desc}</div>
+    </div>
+  );
+}
+
 
 export default Analytics;

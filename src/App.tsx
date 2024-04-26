@@ -6,9 +6,9 @@ import Home from "./page/Home";
 
 function App() {
   return (
-    <div>
+    <div >
       <Appbar />
-      <div className="">
+      <div>
         <Home />
         <Info/>
         <Business/>
