@@ -25,16 +25,17 @@ function Info() {
             </div>
           </div>
           <div className="md:flex pb-10">
-
-          <div className=" flex -mt-10 mb-10 md:hidden xl:ml-20 lg:ml-14 space-x-3">
+            <div className=" flex -mt-10 mb-10 md:hidden xl:ml-20 lg:ml-14 space-x-3">
               <div className="bg-[#121e13] -mt-14 h-min rounded-3xl border border-white/40 w-1/2 p-4 shadow-top-left">
-                <div className="text-white sm:text-5xl text-center text-2xl py-4">Managing</div>
-                
+                <div className="text-white sm:text-5xl text-center text-2xl py-4">
+                  Managing
+                </div>
               </div>
 
               <div className="bg-[#1a1507] h-min rounded-3xl border border-white/40 w-1/2 p-4 shadow-bottom-left">
-                <div className="text-white sm:text-5xl text-center text-2xl py-4">Sharing</div>
-                
+                <div className="text-white sm:text-5xl text-center text-2xl py-4">
+                  Sharing
+                </div>
               </div>
             </div>
 
@@ -62,9 +63,52 @@ function Info() {
             </div>
           </div>
 
+          <div className="flex">
+            <div className="w-2/12 flex flex-col ">
+              <div className=" border-b pb-5 w-14 flex -ml-4 justify-center">
+                <div className="h-28 w-2 bg-gradient-to-b from-transparent to-[#93fb6f] "></div>
+              </div>
+              <div className=" border-b mt-4 pb-5 w-14 flex -ml-4 justify-center">
+                <div className="h-48 w-2 bg-gradient-to-b  from-[#93fb6f] via-green-500 to-orange-500 "></div>
+              </div>
+              <div className="  mt-4 pb-5 w-14 flex -ml-4 justify-center">
+                <div className="h-32 w-2 bg-gradient-to-b  from-orange-500 to-transparent "></div>
+              </div>
+            </div>
+            <div>
+              <div className="py-10">
+                <div className="text-5xl text-white w-[500px]">
+                  Your true identity,{" "}
+                  <span className="bg-gradient-to-r from-green-200 to-green-500 bg-clip-text text-transparent">
+                    managed
+                  </span>{" "}
+                  with ease.
+                </div>
+                <div className="pt-4 text-white/40">
+                  With qid, managing your IDs has never been easier. You can
+                  store and access all your IDs in one place, share them
+                  securely with others, and even get them verified with just a
+                  few clicks. Say goodbye to the hassle of carrying physical IDs
+                  or struggling with tedious verification processes, and hello
+                  to the convenience and simplicity of qid.
+                </div>
+              </div>
 
-          <div>
-            
+              <div className="py-10">
+                <div className="text-5xl text-white w-[600px]">
+                  <span className="bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
+                    Share
+                  </span>{" "}
+                  your identity with ease, qid has got you covered!
+                </div>
+                <div className="pt-4 text-white/40">
+                  Sharing IDs with qid is simple and convenient. Just add the ID
+                  to your qid profile and share it with anyone, anytime,
+                  anywhere. No need to carry physical IDs or worry about losing
+                  them.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
