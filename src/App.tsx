@@ -1,22 +1,26 @@
-import Analytics from "./components/Analytics";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Appbar from "./components/Appbar";
-import Business from "./components/Business";
 import Footer from "./components/Footer";
-import Info from "./components/Info";
-import Home from "./page/Home";
+
+import Main from "./page/Main";
+import AppRoute from "./page/AppRoute";
 
 function App() {
   return (
-    <div >
+    <BrowserRouter>
+    <div>
       <Appbar />
       <div>
-        <Home />
-        <Info/>
-        <Business/>
-        <Analytics/>
+        <Routes>
+        <Route path="/" element={ <Main />}/>
+        <Route path="/app" element={ <AppRoute />}/>
+
+       
+        </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 
