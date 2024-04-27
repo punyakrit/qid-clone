@@ -33,7 +33,7 @@ function Contact() {
             </div>
           </div>
           <div className="md:w-1/2 flex items-center lg:pl-6 justify-center">
-            <div className="border border-white/30 md:p-12 p-6 w-full h-min rounded-3xl space-y-5">
+            <div className="border bg-black border-white/30 md:p-12 p-6 w-full h-min rounded-3xl space-y-5">
               <Form label={"Name"} />
               <div className="md:flex md:space-x-5 space-y-5 md:space-y-0">
                 <Form label={"Phone Number"} />
