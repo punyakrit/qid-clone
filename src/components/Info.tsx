@@ -1,8 +1,10 @@
 import { FaChevronRight } from "react-icons/fa";
 import bg from "../assets/bg2.png";
 import mb from "../assets/mobile.png";
+import { useNavigate } from "react-router-dom";
 
 function Info() {
+  const Navigate = useNavigate()
   return (
     <div className="bg bg-repeat" style={{ backgroundImage: `url(${bg})` }}>
       <div className="h-full">
@@ -15,7 +17,9 @@ function Info() {
                 </span>
                 , easy, and always with you.
               </div>
-              <div className="bg-white text-black mt-6 font-medium text-xl py-4 px-6 cursor-pointer rounded-full flex justify-center w-max items-center">
+              <div onClick={()=>{
+                Navigate('/app')
+              }} className="bg-white text-black mt-6 font-medium text-xl py-4 px-6 cursor-pointer rounded-full flex justify-center w-max items-center">
                 Create free Account{" "}
                 <FaChevronRight className="bg-black text-white rounded-full p-1 ml-2" />
               </div>

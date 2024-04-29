@@ -15,8 +15,10 @@ import {
 } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Analytics() {
+  const Navigate = useNavigate()
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true, loop: true })
   );
@@ -88,7 +90,9 @@ function Analytics() {
                 </div>
               </div>
 
-              <div className="bg-white text-black mt-6 font-medium text-xl sm:py-4 sm:px-6 py-3 px-4 cursor-pointer rounded-full flex justify-center w-max items-center">
+              <div onClick={()=>{
+                Navigate('/app')
+              }} className="bg-white text-black mt-6 font-medium text-xl sm:py-4 sm:px-6 py-3 px-4 cursor-pointer rounded-full flex justify-center w-max items-center">
                 Create Business Account{" "}
                 <FaChevronRight className="bg-black text-white rounded-full p-1 ml-2" />
               </div>

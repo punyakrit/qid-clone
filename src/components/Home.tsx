@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import bg from "../assets/bg-main.png";
 
 function Home() {
+  const Navigate = useNavigate()
   return (
     <div className="relative">
       <div className="h-screen border-b border-gray-800/80">
@@ -9,7 +11,9 @@ function Home() {
           <h1 className="text-white text-5xl md:text-7xl font-bold md:text-center text-left">
           every person deserves to know and be known by their true identity
           </h1>
-          <div className="bg-white mt-6 font-medium text-xl py-4 px-10 cursor-pointer rounded-full">
+          <div onClick={()=>{
+            Navigate('/app')
+          }} className="bg-white mt-6 font-medium text-xl py-4 px-10 cursor-pointer rounded-full">
             Download qid
           </div>
         </div>
